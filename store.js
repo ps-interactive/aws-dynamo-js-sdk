@@ -22,3 +22,25 @@ function buildItem(r) {
   };
 }
 
+function loadPayments() {
+  return db.batchWrite(paymentItems).promise();
+}
+
+function listAllPayments() {
+  return db.scan({ TableName: 'payments' }).promise();
+}
+
+function getByOrderId(orderId) {
+  return db
+    .get({
+      TableName: 'payments',
+      Key: { orderId },
+    })
+    .promise();
+}
+
+module.exports = {
+  loadPayments,
+  listAllPayments,
+  getByOrderId,
+};
