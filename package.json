@@ -1,0 +1,22 @@
+{
+  "name": "aws-dynamo-js-sdk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/caike/aws-dynamo-js-sdk.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/caike/aws-dynamo-js-sdk/issues"
+  },
+  "homepage": "https://github.com/caike/aws-dynamo-js-sdk#readme",
+  "dependencies": {
+    "aws-sdk": "^2.672.0"
+  }
+}
